@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Welcome! Users</title>
+  <meta http-equiv = "refresh" content = "32400; url = waktu-habis.html" /> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+  <style type="text/css">
+.marquee-text {
+  height: 30px;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  line-height: 30px;
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee-text:before,
+.marquee-text:after {
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  top: 0;
+  z-index: 1;
+}
+
+.marquee-text:before {
+  left: 0;
+}
+
+.marquee-text:after {
+  right: 0;
+}
+
+.marquee-text .judul {
+  height: 30px;
+  line-height: 30px;
+  font-weight: bold; font-size: 50px;
+  white-space: nowrap;
+  z-index: 0;
+  animation: marquee 25s linear infinite;
+}
+
+.marquee-text:hover .judul {
+  animation-play-state: paused
+}
+
+@keyframes marquee {
+  0% { transform: translateX(40%); }
+  100% { transform: translateX(-100%); }
+}
+
+.dico-mode{
+  border: none;
+  color: darkblue;
+  background: transparent;
+  font-size: 25px;
+  cursor: default;
+}
+
+.darkmode{
+  background-color: #202020;
+     background-size: cover;
+     background-attachment: scroll;
+     background-repeat: repeat;
+  color: #fff;
+}
+
+.darkmode .dico-mode{
+  background-color: #202020;
+  color: goldenrod;
+  cursor: default;
+}
+
+.darkmode pre{
+  color: lime;
+  cursor: default;
+}
+
+pre{
+  color: #3f883f;
+  cursor: default;
+  font-size: xx-large;
+  font-weight: bold;
+}
+</style>
+
+</head>
+<body>
+      <script>
+        var nama = prompt("Permisi, untuk bisa hadir, silahkan masukkan nama anda.", "");
+        document.write("<center><pre>Nama: "+ nama +"</pre></center>");
+      </script>
+<section style="margin-top: 10rem;">
+  <div class="marquee-text dico-mode" title="Focus-Mode" onclick="darkFunction()" style=" height: 60px;  border-top: 1px solid; border-bottom: 1px solid;">
+      <div class="judul">Anda sekarang sudah bisa menggunakkan perangkat ini. Jangan di tutup tab ini. Jika anda menutup tab ini, kemungkinan anda harus mengulang lagi dari awal. Terima Kasih</div>
+    </div>
+  </div>
+
+       <div style="margin-top: 5vh; background: transparent; padding: 15px 20vw;">
+         <p id="deskripsi" style="border-right: 1px solid; border-left: 1px solid; cursor: pointer; padding: 0 20px 0; text-align: center; line-height: 25px"  onclick="window.location.href = 'waktu-tepat.html';" title="Finish"></p>
+        </div>
+</section>
+<script>
+var i = 0;
+var txt = 'Batas Waktu yang telah ditetapkan ialah dari jam 09.00 sampai jam 19.00 atau 10 jam selama menggunakkan perangkat ini. Terima kasih.';
+var speed = 200;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("deskripsi").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+
+typeWriter()
+</script>
+<script>
+function darkFunction() {
+   var element = document.documentElement
+   element.classList.toggle("darkmode");
+}
+</script>
+</body>
+</html>

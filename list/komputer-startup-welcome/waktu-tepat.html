@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Peringatan</title>
+<style type="text/css">
+
+body { 
+  background: black;
+  color: lime;
+  font-size: 20px;
+}
+
+section {margin-top: 10rem;}
+
+.marquee-text {
+  height: 30px;
+  width: 80%;
+  align-items: center;
+  display: flex;
+  line-height: 30px;
+  margin:auto;
+  overflow: hidden;
+  position: relative;
+  border-left: 1px solid;
+  border-right: 1px solid;
+
+}
+
+.marquee-text:before,
+.marquee-text:after {
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  top: 0;
+  z-index: 2;
+}
+
+.marquee-text:before {
+  left: 0;
+}
+
+.marquee-text:after {
+  right: 0;
+}
+
+.marquee-text div {
+  height: 30px;
+  line-height: 30px;
+  font-size: 16px;
+  white-space: nowrap;
+  color: lime;
+  z-index: 1;
+  animation: marquee 30s linear infinite;
+}
+
+.marquee-text:hover div {
+  animation-play-state: paused
+}
+
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+</style>
+</head>
+<body>
+	<section style="margin-top: 10rem;">
+		<h1 id="judul" style="text-align: center;"></h1>
+		<hr style="background-origin: padding-box; margin: 50px 0 50px;">
+		<div class="marquee-text" style="margin-top: 5vh; border-radius: 2.375rem; background: transparent; cursor: pointer;" onclick="javascript:history.go(-1)" title="Kembali">
+			 <div>Batas Waktu yang telah ditetapkan ialah dari jam 09.00 sampai jam 19.00 atau 10 jam selama menggunakkan perangkat ini. Anda menggunakkan perangkat ini kurang dari 9 jam. Terima kasih.
+  		 </div>
+		</div>
+	</section>
+
+<script>
+var i = 0;
+var txt = 'Waktu Pemakaian Perangkat ini Kurang Dari batas waktu yang sudah ditentukan.';
+var speed = 200;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("judul").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+
+typeWriter()
+</script>
+</body>
+</html>
