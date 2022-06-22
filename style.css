@@ -134,7 +134,6 @@ body::-webkit-scrollbar-track {
 .screen {
     position: absolute;
     min-width: 70%;
-    overflow-y: scroll;
     border-bottom: 1px solid #ddd;
     z-index: 1;
     padding: 8px 0;
@@ -160,15 +159,15 @@ body::-webkit-scrollbar-track {
 
 .dropdown-content::-webkit-scrollbar {
   width: 5px;
-  background-color: white;
+  background-color: #d8e7f3;
 }
 
 .dropdown-content::-webkit-scrollbar-thumb {
-  background-color: red;
+  background-color: #0dcaf0;
 }
 
 .dropdown-content::-webkit-scrollbar-track {
-  background-color: red;
+  background-color: transparent;
 }
  
 .dropdown-content h5 {
