@@ -1,1 +1,0 @@
-Mesin Pencari ini dibuat dengan Javascript, html dan css sebagai template utama. Dan template bootstrap sebagai template tambahan.
