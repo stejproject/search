@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StejProject Tutorials and activity</title>
+  <link rel="shortcut icon" href="https://stejproject.github.io/favicon-128.ico">
+  <meta name="robots" content="follow, index"/>
+  <meta name="description" content="StejProject Tutorials and activity. Programming, How-To? and more content."/>
+<style>
+.searchweb {
+  text-align: center;
+  position: relative;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0px 0px 0rem 0px;
+}
+
+#myUL li .judpos {
+  border: 1px solid #3e0d78;
+  margin-top: 15px; /* Prevent double borders */
+  background-color: #3e0d78;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 0.375rem;
+  font-weight: bold;
+  display: grid;
+  color: yellow;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+#myUL li .judpos:hover:not(.header) {
+  background-color: yellow;
+  color: black;
+}
+  
+.active, .judpos:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+</style>
+  </head>
+<body>
+<div class="searchweb">
+<ul id="myUL">
+<li><a>Terjemahkan Bahasa/Translate</a>
+<div id="google_translate_element"></div>
+<script>
+function googleTranslateElementInit() {
+new google.translate.TranslateElement({
+pageLanguage: 'id'
+}, 'google_translate_element');
+}
+</script>
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</li>
+<li>
+  <a class="judpos">List Cara Membuat Website : Dari admin untuk Anda</a>
+   <div class="panel">
+     <h3>Perlu Diperhatikan</h3>
+     <p> | * List ini tidak bermaksud untuk promosi ya. Terima kasih :) |
+      Proses-proses yang dibutuhkan dalam membuat sebuah website yang admin tahu. Jika ada yang merasa kesulitan, silahkan pelajari tutorial/ panduan-panduan yang berada di situs-situs selain situs ini.</p>
+     <ul>
+       <li>
+         Persiapan dan tools yang ada :
+       </li>
+       <li>
+         1. Teks Editor (Visual Studio Code/ [Sublime Text]/ Notepad++/ dan sebagainya)*
+       </li>
+       <li>
+        2. Web Browser ([Google Chrome]/ Mozilla Firefox/ Safari/ TOR Browser/ MS Edge/ MS Internet Explorer[Tidak Kompartibel untuk saat ini.]/ dan sebagainya)*
+       </li>
+       <li>
+        3. Localhost ([XAMPP]/ Laragon/ dan sebagainya)*
+       </li>
+       <li>
+        4. Web hosting | Jika diperlukan ([GitHub]/ 000webhost/ Wordpress/ Netifly/ dan sebagainya)*
+         <br/>
+           langsung dari websitenya.
+       </li>
+       <li>
+        5. Install domain dari jasa penyedia domain | Jika diperlukan
+       </li>
+       <li>
+        6. Monitoring Situs/ Blog ([Google Webmaster Tool | Google Search Console|]/ Freshping/ Hetrixtools/ Uptime Robot/ dan sebagainya)*
+       </li>
+     </ul>
+     <h3>Link</h3>
+     <ul>
+       <li><a href="https://getbootstrap.com/" style="display: contents; color: black; width: 100%; font-weight: normal; " target="q"> getbootstrap.com </a></li>
+       <li><a href="https://www.apachefriends.org/download.html" style="display: contents; color: black; width: 100%; font-weight: normal; " target="q"> www.apachefriends.org/download.html </a></li>
+       <li><a href="https://www.sublimetext.com/" style="display: contents; color: black; width: 100%; font-weight: normal; " target="q"> www.sublimetext.com </a></li>
+       <li><a href="https://pyscript.net/" style="display: contents; color: black; width: 100%; font-weight: normal;" target="q"> pyscript.net </a></li>
+     </ul>
+   </div>
+</li>
+</ul>
+</div>
+<script>
+    var acc = document.getElementsByClassName("judpos");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
+</html>
