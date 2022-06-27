@@ -23,8 +23,7 @@ body::-webkit-scrollbar-track {
   background-color: transparent;
 }
 
-.logo-stej-search {
-  cursor: pointer;
+.logo-se {
   border-top: 1px solid;
   text-align: center;
 }
