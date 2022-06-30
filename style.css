@@ -55,11 +55,7 @@ body::-webkit-scrollbar-track {
   font-size: 25px;
 }
 
-.darkmode{
-  background-attachment: scroll;
-  background-repeat: no-repeat;
-  color: #fff;
-}
+.darkmode{background-repeat: no-repeat;}
 
 
 .darkmode body {
@@ -68,6 +64,7 @@ body::-webkit-scrollbar-track {
   animation: gradient 15s ease infinite;
   background-attachment: scroll;
   background-repeat: no-repeat;
+  color: #fff;
 }
 
 .darkmode .row{
