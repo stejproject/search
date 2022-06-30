@@ -61,6 +61,7 @@ body::-webkit-scrollbar-track {
 
 .darkmode{background-repeat: no-repeat;}
 
+.darkmode section{color: #fff;}
 
 .darkmode body {
   background: linear-gradient(-45deg, #ffffff, #d0d0d0, #919191, #303030, #9b9b9b, #979797);
@@ -68,7 +69,6 @@ body::-webkit-scrollbar-track {
   animation: gradient 15s ease infinite;
   background-attachment: scroll;
   background-repeat: no-repeat;
-  color: #fff;
 }
 
 .darkmode .row{
