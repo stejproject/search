@@ -17,7 +17,7 @@ body {
   height: 100vh;
 }
 
-section{color: #868686;}
+section{color: #575757;}
 
 @keyframes gradient{
   0%{
@@ -93,7 +93,7 @@ body::-webkit-scrollbar-track {
 }
 
 .darkmode .dropdown-content h5{
-  background-color: #20202000;
+  background-color: transparent;
      background-size: cover;
      background-attachment: scroll;
      background-repeat: repeat;
@@ -101,11 +101,11 @@ body::-webkit-scrollbar-track {
 }
 
 .darkmode .dropdown-content h5:hover{
-  background-color: #fff;
+  background-color: transparent;
      background-size: cover;
      background-attachment: scroll;
      background-repeat: repeat;
-  color: #202020;
+  color: #fff;
 }
 
 .darkmode .dropdown-content{
