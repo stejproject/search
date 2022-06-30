@@ -8,7 +8,7 @@ body {
   animation: gradient 15s ease infinite;
   height: 100vh;
   font-family: Verdana, sans-serif;
-  margin:0
+  margin: 0;
   -ms-overflow-style: none; 
   scrollbar-width: none; 
 }
@@ -67,6 +67,9 @@ body::-webkit-scrollbar-track {
 
 .darkmode body{
   background: linear-gradient(-45deg, #f2eee3, #ebd1d0, #fae0ba, #eb8c73, #f0ded1, #dec4a7);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
   background-attachment: scroll;
   background-repeat: repeat;
   color: #fff;
