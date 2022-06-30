@@ -47,8 +47,9 @@ body::-webkit-scrollbar-track {
 }
 
 .logo-se {
-  border-top: 1px solid;
-  text-align: center;
+  text-align: center; 
+  margin-top: 5px;
+  cursor: default;
 }
 
 .dico-mode{
