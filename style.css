@@ -10,16 +10,14 @@ html {
 }
 
 body {
-  background: linear-gradient(-45deg, #e3f2f1, #d0ebea, #baf4fa, #73cfeb, #d1f0ef, #a7ded8);
+  background: linear-gradient(-45deg, #f4f9f9, #ccf2f4, #a4ebf3);
   animation: gradient 15s ease infinite;
   background-repeat: no-repeat;
   background-size: 400% 400%;
   height: 100vh;
 }
 
-section{
-  color: #0998b5;
-}
+section{color: #868686;}
 
 @keyframes gradient{
   0%{
@@ -54,7 +52,7 @@ body::-webkit-scrollbar-track {
 
 .dico-mode{
   border: none;
-  color: darkblue;
+  color: #7579E7;
   background: transparent;
   border-bottom: 1px solid;
   font-size: 25px;
@@ -65,7 +63,7 @@ body::-webkit-scrollbar-track {
 .darkmode section{color: #fff;}
 
 .darkmode body {
-  background: linear-gradient(-45deg, #747474, #6d6d6d, #7c7c7c, #656565, #727272, #606060);
+  background: linear-gradient(-45deg, #1B262C, #0F4C75, #3282B8, #BBE1FA);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   background-attachment: scroll;
@@ -193,11 +191,9 @@ body::-webkit-scrollbar-track {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    color: #000;
     cursor: pointer;
 }
  
 .dropdown-content h5:hover {
-  color: white;
-  background-color: black;
+  color: #7579E7;
 }
