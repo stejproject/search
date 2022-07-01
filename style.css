@@ -60,10 +60,10 @@ body::-webkit-scrollbar-track {
 
 .darkmode{background-repeat: no-repeat;}
 
-.darkmode section{color: #fff;}
+.darkmode section{color: #BBE1FA;}
 
 .darkmode body {
-  background: linear-gradient(-45deg, #1B262C, #0F4C75, #3282B8, #BBE1FA);
+  background: linear-gradient(-45deg, #1B262C, #0F4C75, #3282B8);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   background-attachment: scroll;
@@ -195,5 +195,5 @@ body::-webkit-scrollbar-track {
 }
  
 .dropdown-content h5:hover {
-  color: #7579E7;
+  color: #BBE1FA;
 }
