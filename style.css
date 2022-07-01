@@ -105,7 +105,7 @@ body::-webkit-scrollbar-track {
      background-size: cover;
      background-attachment: scroll;
      background-repeat: repeat;
-  color: #575757;
+  color: #BBE1FA;
 }
 
 .darkmode .dropdown-content{
@@ -195,5 +195,5 @@ body::-webkit-scrollbar-track {
 }
  
 .dropdown-content h5:hover {
-  color: #BBE1FA;
+  color: #575757;
 }
