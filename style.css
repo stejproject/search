@@ -63,7 +63,7 @@ body::-webkit-scrollbar-track {
 .darkmode section{color: #BBE1FA;}
 
 .darkmode body {
-  background: linear-gradient(-45deg, #1B262C, #0F4C75, #3282B8);
+  background: linear-gradient(-45deg, #0F4C75, #3282B8, #1B262C);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   background-attachment: scroll;
