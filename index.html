@@ -1,100 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>SearchStej</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="shortcut icon" href="https://stejproject.github.io/favicon-128.ico">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-</head>
-<body>
-	<section class="d-grid text-center">
-		<div aria-checked="false" class=" font-bold">
-			<h1 class="font-bold pt-3" style="cursor: pointer;" title="from StejProject">SearchStej</h1>
-			<button class="dico-mode" onclick="darkFunction()" title="Focus-Reader"><i class="bi bi-book"></i></button>
-			<h3 class="logo-se">Search Engine</h3>
-			</div>
-		</div>
-      <div class="screen">
-        <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()" autocomplete="off">
-        <div id="myDropdown" class="dropdown-content">
-        <!-............................................................-!>
-         	<a onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSdIiUX81dbt01I9SOAQ3vhbnpXSq8CzsV0O22sB__DU4CAnzg/viewform')"><h5>Private-Contact-SearchStej</h5></a>
-        <!-............................................................-!>
-         	<a onclick="window.open('list/about.txt')"><h5>About-SearchStej</h5></a>
-        <!-............................................................-!>
-        	<a onclick="window.open('https://disqus.com/embed/comments/?base=default&f=https-stejproject-github-io&t_u=https%3A%2F%2Fstejproject.github.io%2F&t_d=Stej%20Project%20(Alpha%20v0.0.3)&t_t=Stej%20Project%20(Alpha%20v0.0.3)&s_o=default#version=cfefa856cbcd7efb87102e7242c9a829')"><h5>Public_Message-SearchStej_StejProject</h5></a>
-        <!-............................................................-!>
-        	<a onclick="window.open('list/komputer-startup-welcome/index.html')"><h5>Absen-Anggota_Sample</h5></a>
-        <!-............................................................-!>
-        	<a onclick="window.open('https://stejproject.github.io/search.github.io/list/link-post.html')"><h5>Link_list-StejProject</h5></a>
-        <!-............................................................-!>
-        	<a onclick="window.open('https://stejproject.github.io/search.github.io/list/youtube-post.html')"><h5>StejVideo</h5></a>
-        <!-............................................................-!>
-		<a onclick="window.open('https://www.youtube.com/')"><h5>Youtube | Google</h5></a>
-        <!-............................................................-!>
-        	<a onclick="window.open('https://getbootstrap.com/')"><h5>Bootstrap</h5></a>
-        <!-............................................................-!>
-        	<a onclick="window.open('https://stejproject.github.io/')"><h5>Portfolio-StejProject</h5></a>
-         <!-............................................................-!>
-        	<a onclick="window.open('https://stejproject.github.io/search.github.io/list/post.html')"><h5>Blogs</h5></a>
-         <!-............................................................-!>
-        	<a onclick="window.open('https://mail.google.com/')"><h5>https://mail.google.com | Mail Google</h5></a>
-         <!-............................................................-!>
-		<a onclick="window.open('https://developer.mozilla.org/en-US/')"><h5>https://developer.mozilla.org/en-US/ | MDN Web Docs</h5></a>
-         <!-............................................................-!>
-		<a onclick="window.open('https://www.startpage.com/')"><h5>https://www.startpage.com/ | Startpage Search Engine</h5></a>
-         <!-............................................................-!>
-		<a onclick="window.open('https://pyscript.net/examples/')"><h5>https://pyscript.net/examples/ | Py-Script Examples List Projects</h5></a>
-	 <!-............................................................-!>
-		<a onclick="window.open('https://engineering.anaconda.com/2022/04/welcome-pyscript.html')"><h5>https://engineering.anaconda.com/2022/04/welcome-pyscript.html | Py-Script Blogs</h5></a>
-	 <!-............................................................-!>
-		<a onclick="window.open('https://github.com/public-apis/public-apis')"><h5>https://github.com/public-apis/public-apis | Github Public APIs</h5></a>
-	 <!-............................................................-!>
-		<a onclick="window.open('https://github.com/')"><h5>https://github.com | Github</h5></a>
-	 <!-............................................................-!>
-		<a onclick="window.open('https://www.youtube.com/watch?v=XjhJU04rjtY')"><h5>https://www.youtube.com/watch?v=XjhJU04rjtY | Youtube, Tangan Belang Ngobrol Yuk: MENGUAK RAHASIA AKINATOR!</h5></a>
-	 <!-............................................................-!>
-		<a onclick="window.open('https://colorhunt.co/')"><h5>https://colorhunt.co/ | colorhunt.co</h5></a>
-	 <!-............................................................-!>
-		<a onclick="window.open('https://ide.onelang.io/')"><h5>https://ide.onelang.io/ | ide.onelang.io</h5></a>
-	 <!-............................................................-!>
-		<a onclick="window.open('https://andylukito.itch.io/')"><h5>https://andylukito.itch.io/ | andylukito.itch.io</h5></a>
-	 <!-............................................................-!>
-		<a onclick="window.open('https://paasfinder.org/vendors')"><h5>https://paasfinder.org/vendors | paasfinder.org/vendors</h5></a>
-	 <!-............................................................-!>
-		<a onclick="window.open('https://roadmap.sh/')"><h5>https://roadmap.sh/ | roadmap.sh</h5></a>
-	 <!-............................................................-!>
-		<a onclick="window.open('https://iplogger.org/')"><h5>https://iplogger.org/ | iplogger.org</h5></a>
-	 <!-............................................................-!>
-		<a onclick="window.open('http://www.spylink.net/')"><h5>http://www.spylink.net/ | www.spylink.net</h5></a>
-	 <!-............................................................-!>
-		<a onclick="window.open('https://everipedia.org/')"><h5>https://everipedia.org/ | everipedia.org</h5></a>
-	 <!-............................................................-!>
-		<a onclick="window.open('https://www.youtube.com/results?search_query=search+engine+and+web+crawler')"><h5>https://www.youtube.com/results?search_query=search+engine+and+web+crawler | youtube.com</h5></a>
-	 <!-............................................................-!>
-		<a onclick="window.open('https://www.youtube.com/watch?v=UbsLysuDivY')"><h5>https://www.youtube.com/watch?v=UbsLysuDivY | youtube.com</h5></a>
-	 <!-............................................................-!>
-		<a onclick="window.open('https://www.hackerearth.com/practice/notes/praveen97uma/crawling-a-website-that-loads-content-using-javascript-with-selenium-webdriver-in-python/')"><h5>crawling a website that loads content using javascript with selenium web driver in python | hackerearth.com</h5></a>
-	 <!-............................................................-!>
-		<a onclick="window.open('https://github.com/ahfarmer/emoji-search')"><h5>github.com/ahfarmer/emoji-search | github.com</h5></a>
-	 <!-............................................................-!>
-		<a onclick="window.open('https://opensource.fb.com/')"><h5>https://opensource.fb.com/ | opensource.fb.com</h5></a>
-	 <!-............................................................-!>
-                <a onclick="window.open('https://transparencyreport.google.com/safe-browsing/search')"><h5>https://transparencyreport.google.com/safe-browsing/search | Cek Situs Berhttps</h5></a>
-	 <!-............................................................-!>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SearchStej</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://stejproject.github.io/favicon-128.ico"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <section class="d-grid text-center">
+      <div aria-checked="false" class="font-bold">
+        <h1
+          class="font-bold pt-3"
+          style="cursor: pointer;"
+          title="from StejProject"
+        >
+          SearchStej
+        </h1>
+        <button class="dico-mode" onclick="darkFunction()" title="Focus-Reader">
+          <i class="bi bi-book"></i>
+        </button>
+        <h3 class="logo-se">Search Engine</h3>
       </div>
-</div>
-<script src="search.js" async></script>
-	</section>
-<script>
-function darkFunction() {
-   var element = document.documentElement
-   element.classList.toggle("darkmode");
-}
-</script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-</body>
+      <div class="screen">
+        <input
+          type="text"
+          placeholder="Search.."
+          id="myInput"
+          onkeyup="filterFunction()"
+          autocomplete="off"
+        />
+        <div id="myDropdown" class="dropdown-content">
+          <-!............................................................!->
+          <a
+            onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSdIiUX81dbt01I9SOAQ3vhbnpXSq8CzsV0O22sB__DU4CAnzg/viewform')"
+            ><h5>Private-Contact-SearchStej</h5></a
+          >
+          <-!............................................................!->
+          <a onclick="window.open('list/about.txt')"
+            ><h5>About-SearchStej</h5></a
+          >
+          <-!............................................................!->
+          <a
+            onclick="window.open('https://disqus.com/embed/comments/?base=default&f=https-stejproject-github-io&t_u=https%3A%2F%2Fstejproject.github.io%2F&t_d=Stej%20Project%20(Alpha%20v0.0.3)&t_t=Stej%20Project%20(Alpha%20v0.0.3)&s_o=default#version=cfefa856cbcd7efb87102e7242c9a829')"
+            ><h5>Public_Message-SearchStej_StejProject</h5></a
+          >
+          <-!............................................................!->
+          <a onclick="window.open('list/komputer-startup-welcome/index.html')"
+            ><h5>Absen-Anggota_Sample</h5></a
+          >
+          <-!............................................................!->
+          <a
+            onclick="window.open('https://stejproject.github.io/search.github.io/list/link-post.html')"
+            ><h5>Link_list-StejProject</h5></a
+          >
+          <-!............................................................!->
+          <a
+            onclick="window.open('https://stejproject.github.io/search.github.io/list/youtube-post.html')"
+            ><h5>StejVideo</h5></a
+          >
+          <-!............................................................!->
+          <a onclick="window.open('https://www.youtube.com/')"
+            ><h5>Youtube | Google</h5></a
+          >
+          <-!............................................................!->
+          <a onclick="window.open('https://getbootstrap.com/')"
+            ><h5>Bootstrap</h5></a
+          >
+          <-!............................................................!->
+          <a onclick="window.open('https://stejproject.github.io/')"
+            ><h5>Portfolio-StejProject</h5></a
+          >
+          <-!............................................................!->
+          <a
+            onclick="window.open('https://stejproject.github.io/search.github.io/list/post.html')"
+            ><h5>Blogs</h5></a
+          >
+          <-!............................................................!->
+          <a onclick="window.open('https://mail.google.com/')"
+            ><h5>https://mail.google.com | Mail Google</h5></a
+          >
+          <-!............................................................!->
+          <a onclick="window.open('https://developer.mozilla.org/en-US/')"
+            ><h5>https://developer.mozilla.org/en-US/ | MDN Web Docs</h5></a
+          >
+          <-!............................................................!->
+          <a onclick="window.open('https://www.startpage.com/')"
+            ><h5>https://www.startpage.com/ | Startpage Search Engine</h5></a
+          >
+          <-!............................................................!->
+          <a onclick="window.open('https://pyscript.net/examples/')"
+            ><h5>
+              https://pyscript.net/examples/ | Py-Script Examples List Projects
+            </h5></a
+          >
+          <-!............................................................!->
+          <a
+            onclick="window.open('https://engineering.anaconda.com/2022/04/welcome-pyscript.html')"
+            ><h5>
+              https://engineering.anaconda.com/2022/04/welcome-pyscript.html |
+              Py-Script Blogs
+            </h5></a
+          >
+          <-!............................................................!->
+          <a onclick="window.open('https://github.com/public-apis/public-apis')"
+            ><h5>
+              https://github.com/public-apis/public-apis | Github Public APIs
+            </h5></a
+          >
+          <-!............................................................!->
+          <a onclick="window.open('https://github.com/')"
+            ><h5>https://github.com | Github</h5></a
+          >
+          <-!............................................................!->
+          <a
+            onclick="window.open('https://www.youtube.com/watch?v=XjhJU04rjtY')"
+            ><h5>
+              https://www.youtube.com/watch?v=XjhJU04rjtY | Youtube, Tangan
+              Belang Ngobrol Yuk: MENGUAK RAHASIA AKINATOR!
+            </h5></a
+          >
+          <-!............................................................!->
+          <a onclick="window.open('https://colorhunt.co/')"
+            ><h5>https://colorhunt.co/ | colorhunt.co</h5></a
+          >
+          <-!............................................................!->
+          <a onclick="window.open('https://ide.onelang.io/')"
+            ><h5>https://ide.onelang.io/ | ide.onelang.io</h5></a
+          >
+          <-!............................................................!->
+          <a onclick="window.open('https://andylukito.itch.io/')"
+            ><h5>https://andylukito.itch.io/ | andylukito.itch.io</h5></a
+          >
+          <-!............................................................!->
+          <a onclick="window.open('https://paasfinder.org/vendors')"
+            ><h5>https://paasfinder.org/vendors | paasfinder.org/vendors</h5></a
+          >
+          <-!............................................................!->
+          <a onclick="window.open('https://roadmap.sh/')"
+            ><h5>https://roadmap.sh/ | roadmap.sh</h5></a
+          >
+          <-!............................................................!->
+          <a onclick="window.open('https://iplogger.org/')"
+            ><h5>https://iplogger.org/ | iplogger.org</h5></a
+          >
+          <-!............................................................!->
+          <a onclick="window.open('http://www.spylink.net/')"
+            ><h5>http://www.spylink.net/ | www.spylink.net</h5></a
+          >
+          <-!............................................................!->
+          <a onclick="window.open('https://everipedia.org/')"
+            ><h5>https://everipedia.org/ | everipedia.org</h5></a
+          >
+          <-!............................................................!->
+          <a
+            onclick="window.open('https://www.youtube.com/results?search_query=search+engine+and+web+crawler')"
+            ><h5>
+              https://www.youtube.com/results?search_query=search+engine+and+web+crawler
+              | youtube.com
+            </h5></a
+          >
+          <-!............................................................!->
+          <a
+            onclick="window.open('https://www.youtube.com/watch?v=UbsLysuDivY')"
+            ><h5>
+              https://www.youtube.com/watch?v=UbsLysuDivY | youtube.com
+            </h5></a
+          >
+          <-!............................................................!->
+          <a
+            onclick="window.open('https://www.hackerearth.com/practice/notes/praveen97uma/crawling-a-website-that-loads-content-using-javascript-with-selenium-webdriver-in-python/')"
+            ><h5>
+              crawling a website that loads content using javascript with
+              selenium web driver in python | hackerearth.com
+            </h5></a
+          >
+          <-!............................................................!->
+          <a onclick="window.open('https://github.com/ahfarmer/emoji-search')"
+            ><h5>github.com/ahfarmer/emoji-search | github.com</h5></a
+          >
+          <-!............................................................!->
+          <a onclick="window.open('https://opensource.fb.com/')"
+            ><h5>https://opensource.fb.com/ | opensource.fb.com</h5></a
+          >
+          <-!............................................................!->
+          <a
+            onclick="window.open('https://transparencyreport.google.com/safe-browsing/search')"
+            ><h5>
+              https://transparencyreport.google.com/safe-browsing/search | Cek
+              Situs Berhttps
+            </h5></a
+          >
+          <-!............................................................!->
+        </div>
+      </div>
+      <script src="search.js" async></script>
+    </section>
+    <script>
+      function darkFunction() {
+        var element = document.documentElement;
+        element.classList.toggle("darkmode");
+      }
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
