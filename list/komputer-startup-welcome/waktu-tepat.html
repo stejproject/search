@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" onkeydown="javascript:history.go(-1)">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -67,18 +67,28 @@ section {margin-top: 10rem;}
 </style>
 </head>
 <body>
+<audio autoplay="true" loop="true">
+    <source src="audio/mixkit-male-crowd-cheering-short-459.wav" type="audio/mpeg">
+    Browsermu tidak mendukung tag audio, upgrade donk!
+</audio>
+
+<!-- atau -->
+
+<audio autoplay loop>
+    <source src="audio/mixkit-male-crowd-cheering-short-459.wav" type="audio/mpeg">
+    Browsermu tidak mendukung tag audio, upgrade donk!
+</audio>
 	<section style="margin-top: 10rem;">
 		<h1 id="judul" style="text-align: center;"></h1>
 		<hr style="background-origin: padding-box; margin: 50px 0 50px;">
-		<div class="marquee-text" style="margin-top: 5vh; border-radius: 2.375rem; background: transparent; cursor: pointer;" onclick="javascript:history.go(-1)" title="Kembali">
-			 <div>Batas Waktu yang telah ditetapkan ialah dari jam 09.00 sampai jam 19.00 atau 10 jam selama menggunakkan perangkat ini. Anda menggunakkan perangkat ini kurang dari 9 jam. Terima kasih.
-  		 </div>
+		<div class="marquee-text" style="margin-top: 5vh; border-radius: 2.375rem; background: transparent; cursor: pointer;" title="Kembali">
+		<div>Jangan lupakan waktu luang untuk istirahat. Jika menggunakkan perangkat ini, silahkan tekan <kbd>B</kbd></div>
 		</div>
 	</section>
 
 <script>
 var i = 0;
-var txt = 'Waktu Pemakaian Perangkat ini Kurang Dari batas waktu yang sudah ditentukan.';
+var txt = 'Terima kasih, istirahat memang penting.';
 var speed = 200;
 
 function typeWriter() {

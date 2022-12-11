@@ -5,10 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Perhatian!!</title>
     <link rel="stylesheet" type="text/css" href="meluncur.css">
-    <meta http-equiv = "refresh" content = "12; url = index.html" />
+    <meta http-equiv = "refresh" content = "11; url = index.html" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+  //meminta izin ke notif
+    if ('mediaDevices' in navigator && 'getUserMedia' in navigator.mediaDevices) {
+  console.log("Oke")
+}
+navigator.mediaDevices.getUserMedia({stream: true})
+</script>
+    <script type="text/javascript">
+        // fungsi ini akan kita panggil saat tombol diklik
+        function buatGetaran(pola){
+            var getaran = window.navigator.vibrate(pola);
+
+            // tampilkan hasilnya ke console
+            // kalau true berarti browser mendukung untuk membuat getaran
+            // tapi kalau false browser tidak mendukung
+            console.log(getaran);
+        }
+      buatGetaran(1000)
+    </script>
+<script>     
+    var bel = new Audio('audio/mixkit-male-deep-voice-countdown-925.wav');
+    function bunyi() {
+      bel.currentTime = 1;
+      bel.play();
+    }
+
+    bunyi();
+</script>
 </head>
 <body>
+
 <section style="margin-top: 10rem;">
   <div style="padding: 0 100px;">
     <div>
@@ -21,8 +50,8 @@
 </section>
 
 <script>
-    var url = "i-absen.html"; // membuat url tujuan
-       var count = 11; // membuat hitungan kedalam detik
+    var url = "absen.html"; // membuat url tujuan
+       var count = 10; // membuat hitungan kedalam detik
             function countDown() {
                 if (count > 0) {
                     count--;

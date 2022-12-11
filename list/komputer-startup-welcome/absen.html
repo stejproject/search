@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Welcome! Users</title>
+  <link rel="shortcut icon" href="https://stejproject.github.io/favicon-128.ico">
+  <meta http-equiv = "refresh" content = "10800; url = waktu-habis.html" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+		integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+		crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="search-engine/style.css">
+  <style type="text/css">
+  @media screen and (max-width: 600px) {
+    .linked::-webkit-scrollbar {
+      width: 5px;
+      background-color: transparent;
+    }
+
+    .linked::-webkit-scrollbar-thumb {
+        background-color: transparent;
+      }
+
+    .linked::-webkit-scrollbar-track {
+      background-color: transparent;
+    }
+    .linked{
+      display: none;
+    }
+		.wrapper{
+			display: none;
+		}
+  }
+
+  .marquee-text {
+    height: 30px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    line-height: 30px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .marquee-text:before,
+  .marquee-text:after {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    top: 0;
+    z-index: 1;
+  }
+
+  .marquee-text:before {
+    left: 0;
+  }
+
+  .marquee-text:after {
+    right: 0;
+  }
+
+  .marquee-text .judul {
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold; font-size: 50px;
+    white-space: nowrap;
+    z-index: 0;
+    animation: marquee 25s linear infinite;
+  }
+
+  .marquee-text:hover .judul {
+    animation-play-state: paused
+  }
+
+  @keyframes marquee {
+    0% { transform: translateX(40%); }
+    100% { transform: translateX(-100%); }
+  }
+
+  .dico-mode{
+    border: none;
+    color: darkblue;
+    background: transparent;
+    font-size: 25px;
+    cursor: default;
+  }
+
+  .darkmode{
+    background-color: #202020;
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: repeat;
+    color: #fff;
+  }
+
+	.darkmode .text{
+		background-color: #fff;
+		color: #202020;
+	}
+
+  .darkmode .dico-mode{
+    background-color: #202020;
+    color: goldenrod;
+    cursor: default;
+  }
+
+  .darkmode pre{
+    color: lime;
+    cursor: default;
+  }
+
+  pre{
+    color: #3f883f;
+    cursor: default;
+    font-size: xx-large;
+    font-weight: bold;
+  }
+
+  .linked::-webkit-scrollbar {
+    width: 5px;
+    background-color: #d8e7f3;
+  }
+
+  .linked::-webkit-scrollbar-thumb {
+    background-color: #0dcaf0;
+  }
+
+  .linked::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  .linked{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-color: #0dcaf0 #d8e7f3;
+    scrollbar-width: thin;
+    list-style: symbols;
+    margin: 0 20%;
+  }
+</style>
+
+<script>
+  //meminta izin ke notif
+    if ('mediaDevices' in navigator && 'getUserMedia' in navigator.mediaDevices) {
+  console.log("Oke")
+}
+navigator.mediaDevices.getUserMedia({stream: true})
+</script>
+    <script type="text/javascript">
+        // fungsi ini akan kita panggil saat tombol diklik
+        function buatGetaran(pola){
+            var getaran = window.navigator.vibrate(pola);
+
+            // tampilkan hasilnya ke console
+            // kalau true berarti browser mendukung untuk membuat getaran
+            // tapi kalau false browser tidak mendukung
+            console.log(getaran);
+        }
+      buatGetaran(1000)
+    </script>
+<script>
+    var bel = new Audio('audio/5SPLHB7-gun-shotgun-3.mp3');
+    function bunyi() {
+      bel.currentTime = 1;
+      bel.play();
+    }
+
+    bunyi();
+</script>
+</head>
+<body>
+<audio autoplay="true">
+    <source src="audio/5SPLHB7-gun-shotgun-3.mp3" type="audio/mpeg">
+    Browsermu tidak mendukung tag audio, upgrade donk!
+</audio>
+
+<!-- atau -->
+
+<audio autoplay>
+    <source src="audio/5SPLHB7-gun-shotgun-3.mp3" type="audio/mpeg">
+    Browsermu tidak mendukung tag audio, upgrade donk!
+</audio>
+      <script>
+        alert("MANA NAMAKU!!!")
+            var nama = prompt("INI NAMAKU!!! ")
+            if(nama != null && nama != "")
+            document.write("<center><pre>Maaf, Halo "+ nama +"</pre></center>");
+            else
+						document.write("<center><pre>Maaf 🤖 Robot!!!</pre></center>");
+        </script>
+<section style="margin-top: 10rem;">
+        <div class="marquee-text dico-mode" title="Focus-Mode" onclick="darkFunction()" style=" height: 60px;  border-top: 1px solid; border-bottom: 1px solid;">
+            <div class="judul">Kita sekarang sudah bisa menggunakkan perangkat ini.  Terima Kasih</div>
+          </div>
+        </div>
+
+      <div style="margin-top: 3vh; background: transparent; padding: 15px 20vw;">
+        <p id="deskripsi" style="border-right: 1px solid; border-left: 1px solid; cursor: pointer; padding: 0 20px 0; text-align: center; line-height: 25px"  onclick="window.location.href = 'waktu-tepat.html';" title="Finish"></p>
+      </div>
+      <div style="display: block; padding: 15px 0vw;"  title="Recomendations Links">
+				<div class="wrapper">
+						<div class="search-input">
+							<a href="" target="_blank" hidden></a>
+							<input type="text" placeholder="Ketik stejproject... atau yang lain.">
+							<div class="autocom-box linked text">
+								<!-- here list are inserted from javascript -->
+							</div>
+							<div class="icon"><i class="fas fa-search"></i></div>
+						</div>
+					</div>
+					 <script src="search-engine/suggestions.js" defer></script>
+					 <script src="search-engine/script.js" async></script>
+      </div>
+</section>
+<script>
+var i = 0;
+var txt = 'Batas Waktu yang telah ditetapkan ialah 3 jam selama menggunakkan perangkat ini. Terima kasih.';
+var speed = 200;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("deskripsi").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+
+typeWriter()
+</script>
+<script>
+function darkFunction() {
+  var element = document.documentElement
+  element.classList.toggle("darkmode");
+}
+</script>
+</body>
+</html>

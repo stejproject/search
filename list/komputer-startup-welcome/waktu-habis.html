@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Peringatan</title>
 <style type="text/css">
+
 body { 
   background: black;
   color: #ff4800;
@@ -61,46 +62,42 @@ body {
   100% { transform: translateX(-100%); }
 }
 </style>
-<script>
-  //meminta izin ke notif
-    if ('mediaDevices' in navigator && 'getUserMedia' in navigator.mediaDevices) {
-  console.log("Oke")
-}
-navigator.mediaDevices.getUserMedia({stream: true})
-</script>
-    <script type="text/javascript">
-        // fungsi ini akan kita panggil saat tombol diklik
-        function buatGetaran(pola){
-            var getaran = window.navigator.vibrate(pola);
-
-            // tampilkan hasilnya ke console
-            // kalau true berarti browser mendukung untuk membuat getaran
-            // tapi kalau false browser tidak mendukung
-            console.log(getaran);
-        }
-      buatGetaran(1000)
-    </script>
-<script>     
-    var bel = new Audio('mixkit-facility-alarm-sound-999.wav');
-    function bunyi() {
-      bel.currentTime = 1;
-      bel.play();
-    }
-
-    bunyi();
-</script>
 </head>
 <body>
+<audio autoplay="true" loop="true">
+    <source src="audio/RF3EJHQ-gunshot-shotgun.mp3" type="audio/mpeg">
+    Browsermu tidak mendukung tag audio, upgrade donk!
+</audio>
+
+<!-- atau -->
+
+<audio autoplay loop>
+    <source src="audio/RF3EJHQ-gunshot-shotgun.mp3" type="audio/mpeg">
+    Browsermu tidak mendukung tag audio, upgrade donk!
+</audio>
+
+<audio autoplay="true" loop="true">
+    <source src="audio/CCLGUEP-weapons-gun-clapping-pop-gun-04.mp3" type="audio/mpeg">
+    Browsermu tidak mendukung tag audio, upgrade donk!
+</audio>
+
+<!-- atau -->
+
+<audio autoplay loop>
+    <source src="audio/CCLGUEP-weapons-gun-clapping-pop-gun-04.mp3" type="audio/mpeg">
+    Browsermu tidak mendukung tag audio, upgrade donk!
+</audio>
 	<section>
 		<h1 id="judul" style="text-align: center;margin-top: 10rem;"></h1>
 		<hr style="background-origin: padding-box; margin: 50px 0 50px;">
 		<div class="marquee-text" style="margin-top: 5vh; border-radius: 2.375rem; background: transparent;">
-			<div>Batas Waktu yang telah ditetapkan ialah dari jam 09.00 sampai jam 19.00 atau 10 jam selama menggunakkan perangkat ini. Terima kasih.</div>
+			<div>Waktu Pemakaian Perangkat ini Sudah Melebihi batas waktu yang sudah ditentukan.</div>
 		</div>
 	</section>
+
 <script>
 var i = 0;
-var txt = 'Waktu Pemakaian Perangkat ini Sudah Melebihi batas waktu yang sudah ditentukan.';
+var txt = 'Silahkan tutup perangkat ini sekarang! Terima kasih.';
 var speed = 200;
 
 function typeWriter() {
